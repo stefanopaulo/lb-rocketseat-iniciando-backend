@@ -31,7 +31,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/portfolio', (req, res) => {
-    return res.send('portfolio', { items: videos })
+    return res.render('portfolio', { items: videos })
 })
 
 server.get('/video', (req, res) => {
