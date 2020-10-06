@@ -31,7 +31,12 @@ server.get('/', (req, res) => {
 })
 
 server.get('/portfolio', (req, res) => {
-    return res.render('portfolio', { items: videos })
+    return res.send('portfolio', { items: videos })
+})
+
+server.get('/video', (req, res) => {
+    const { id } = req.query
+    return res.send(id)
 })
 
 server.listen(5000, () => {
