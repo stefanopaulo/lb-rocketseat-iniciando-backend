@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Mayk Brito</title>
-</head>
-<body>
-    <header>
-        <div class="links">
-            <a href="/">sobre</a>
-            <a href="/portfolio">aulas</a>
-        </div>
-    </header>
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Sobre - Mayk Brito</title>
+{% endblock %}
+
+{% block content %}
 
     <div id="wrapper">
         <img src="https://avatars2.githubusercontent.com/u/6643122?s=400&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4" alt="Foto de perfil: Mayk Brito">
@@ -26,5 +18,5 @@
         <a href="/">Twitter</a>
         <a href="/">Linkedin</a>
     </div>
-</body>
-</html>
+
+{% endblock %}

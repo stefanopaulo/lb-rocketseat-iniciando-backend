@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Portifolio - Mayk Brito</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Mayk Brito</title>
-</head>
-<body>
-    <header>
-        <div class="links">
-            <a href="/">sobre</a>
-            <a href="#">aulas</a>
-        </div>
-    </header>
+{% endblock %}
+
+{% block content %}
 
     <div id="wrapper">
         <h1>Aulas</h1>
@@ -107,5 +99,5 @@
     </div>
 
     <script src="scripts.js"></script>
-</body>
-</html>
+
+{% endblock %}
