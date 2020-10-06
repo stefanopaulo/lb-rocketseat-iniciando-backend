@@ -106,6 +106,7 @@ header {
     background-color: var(--color-rocket);
     margin-bottom: 32px;
     cursor: pointer;
+    display: grid;
 }
 
 .card_image_container img {
@@ -120,6 +121,7 @@ header {
 .card_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card_price {
