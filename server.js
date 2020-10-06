@@ -36,7 +36,18 @@ server.get('/portfolio', (req, res) => {
 
 server.get('/video', (req, res) => {
     const { id } = req.query
-    return res.send(id)
+
+    const video = videos.find(video => {
+        if (video.id == id) {
+            return true
+        }
+    })
+
+    if (!video) {
+        return res.send('Video not found!')
+    }
+
+    return res.render('video', { video })
 })
 
 server.listen(5000, () => {
