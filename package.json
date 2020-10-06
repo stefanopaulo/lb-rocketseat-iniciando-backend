@@ -1,0 +1,10 @@
+{
+  "name": "lb-rocketseat-iniciando-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "stefanopaulo <stefanopaulo47@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server.js"
+  }
+}
